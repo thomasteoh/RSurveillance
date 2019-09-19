@@ -363,8 +363,8 @@ observed_result <- tp.normal(25, 120, 0.9, 0.99)[[2]]
 stopifnot(all(abs(observed_result - expected_result) < tol))
 
 ## Test case - tp
-expected_result <- c(0.02941176, 0, 0.09291029)
-observed_result <- tp(25, 200, 0.95, 0.9, "c-p")[[2]]
+expected_result <- c(0.08823529, 0.02944048, 0.158687)
+observed_result <- tp(35, 200, 0.95, 0.9, "c-p")[[2]]
 stopifnot(all(abs(observed_result - expected_result) < tol))
 
 ## Test case - adj.risk.sim
